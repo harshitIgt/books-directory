@@ -1,0 +1,29 @@
+# Dependency directories
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs
+*.log
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Environment variables
+.env
+
+# IDE and text editor files
+.vscode/
+.idea/
+
+# Compiled output
+dist/
+out/
+
+# OS generated files
+.DS_Store
+Thumbs.db

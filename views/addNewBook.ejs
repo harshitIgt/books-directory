@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Directory</title>
+    <%- include('./partials/head') %>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <%- include('./partials/nav') %> 
+    <div class="container mt-2">
+        <div class="left-container">
+            <br><br>
+          <div ><a class="buttons" href="http://localhost:5000/" class="btn btn-primary" required>Home</a></div>
+          <br><br>
+          <div ><a class="buttons" href="http://localhost:5000/books/authers" class="btn btn-primary" required>Auther</a></div>
+          <br><br>
+          <div ><a class="buttons" href="http://localhost:5000/books/genres" class="btn btn-primary" required>Genres</a></div>
+          <br><br>
+          <div ><a class="buttons" href="http://localhost:5000/books/" class="btn btn-primary" required>Add New Book</a></div>
+          
+        </div>
+        <div class="right-container">
+            <%- include('./partials/addBook') %> 
+        </div>
+    </div>
+    
+    <%- include('./partials/scripts') %>
+    <script src="script.js"></script>
+    
+</body>
+</html>

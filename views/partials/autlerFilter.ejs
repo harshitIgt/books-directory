@@ -1,0 +1,14 @@
+<div class="addNewBook mt-4">
+    <script>
+    </script>
+    <% books.forEach(book => { %>
+        <div class="bookDetails">
+            <h4>Book Name: <%= book.book %></h4>
+            <h6>Auther: <%= book.auther %></h6>
+            <h6>Genre: <%= book.genres %></h6>
+            <p>Description: <%= book.description %></p>
+        </div>
+     
+    <% }) %>
+
+</div>

@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div>
+    <div>
+        <form class="example" method="post" action="/books/find">
+            <input type="text" placeholder="Find Your Book..." name="search" id="sea">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+    </div>
+    
+    <div class="addNewBook mt-4">
+        <% if (books) { %>
+            <% books.forEach(book => { %>
+                <div class="bookDetails">
+                    <h4>Book Name: <%= book.book %><a href="http://localhost:5000/books/del/<%=book._id%>" class="bi bi-trash">⌧</a></h4>
+                    <h6>Auther: <%= book.auther %></h6>
+                    <h6>Genre: <%= book.genres %></h6>
+                    <p>Description: <%= book.description %></p>
+                    <p style="color:blue;">Last Update: <%= book.updatedAt.toString().substr(0,15) %></p>
+                </div>
+             
+            <% }) %>
+                
+        <% } %>
+    </div>
+</div>
